@@ -1,0 +1,41 @@
+<!-- Eu não entendi nada desse aqui. Vou fazer as notações depois-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Formulario HTML5</title>
+    </head>
+
+    <body>
+        <form id=pagamento onsubimit="return validateFormOnSubmit(this)" action="">
+        
+        <fieldset id="1"><legend>Dados Pessoais</legend>
+            <ol><li>
+                <label for=nome>Nome</label>
+                <input id=nome name=nome type=text placeholder="nome e sobrenome" required autofocus>
+                </li><li>
+                <label for=email>E-mail</label>
+                <input id=email name=email type=text placeholder="macoratti@gmail.com" required autofocus>
+                </li><li>
+                 <label for=fone>Telefone</label>
+                <input id=fone name=fone type=text placeholder="(69) 998754321" required autofocus>
+                </li>
+            </fieldset>
+        </fieldset id="2"><legend>Local de Entrega</legend>
+         </ol>
+         <li>
+            <label for=entrega>Residencial</label>
+            <textarea id=entrega name=entrega rows=5 required placeholder="Insira a sua humilde residência"></textarea>
+         <p></p></li><li>
+            <label for=cep>Codigo Postal</label>
+            <input id=cep name=cep type=text placeholder="99999-999" required pattern="\d{5}-?\d{3}">
+         </li><li>
+        <label for="pais">Pais:</label>
+        <input name="pais" id="pais" type=text required>
+         </li></ol>
+        
+        </fieldset>
+    </body>
+</html>
